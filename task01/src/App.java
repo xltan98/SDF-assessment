@@ -13,10 +13,13 @@ public class App {
         String message="";
         double answer;
         String ans="0";
+        //String oldMessage;
 
         while (!"exit".equals(message.toLowerCase())){
 
             message =cons.readLine(">");
+           // message = oldMessage.replaceAll("$","");
+            
 
             if (message.contains("last")){
                 message = message.replaceAll("last",ans);
